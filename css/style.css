@@ -115,8 +115,10 @@ body {
     padding: 15px 0;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
-    position: relative;
+    position: sticky;
+    top: 0;
     z-index: 1001;
+    transition: all 0.3s ease;
 }
 
 .main-nav .container {
@@ -171,16 +173,16 @@ body {
 
 .logo img {
     height: 70px;
-    transition: transform 0.3s ease;
-    animation: fadeIn 1s ease-out;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     object-fit: contain;
     max-width: 100%;
     background: transparent;
-    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+    filter: drop-shadow(0 2px 8px rgba(0,0,0,0.1));
 }
 
 .logo img:hover {
-    animation: pulse 1s infinite;
+    transform: translateY(-2px);
+    filter: drop-shadow(0 4px 12px rgba(0,0,0,0.15)) brightness(1.05);
 }
 
 .social-header a {
@@ -1058,6 +1060,7 @@ section .container {
 
 .main-header.scrolled .logo img {
     height: 60px;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Carrossel de Moradores */
@@ -1326,4 +1329,37 @@ section .container {
     .evento-info .data {
         font-size: 0.9rem;
     }
+}
+
+/* Adicione estas novas animações */
+@keyframes logoEntrance {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.logo {
+    position: relative;
+    animation: logoEntrance 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.logo::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--primary-gold), transparent);
+    transition: width 0.3s ease;
+}
+
+.logo:hover::after {
+    width: 100%;
 }
