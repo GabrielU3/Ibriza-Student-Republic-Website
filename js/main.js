@@ -391,4 +391,29 @@ Enviado através do formulário de contato do site da República Ibriza`
     document.querySelectorAll('.area-slider').forEach(slider => {
         initAreaSlider(slider);
     });
+
+    // Função para controlar os sliders dos eventos
+    function initEventSliders() {
+        const sliders = document.querySelectorAll('.evento-slider');
+        
+        sliders.forEach(slider => {
+            const slides = slider.querySelector('.slides');
+            const images = slides.querySelectorAll('img');
+            let currentSlide = 0;
+            
+            // Define a largura total baseada no número de imagens
+            slides.style.width = `${images.length * 100}%`;
+            
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % images.length;
+                slides.style.transform = `translateX(-${currentSlide * (100 / images.length)}%)`;
+            }
+            
+            // Muda os slides a cada 3 segundos
+            setInterval(nextSlide, 3000);
+        });
+    }
+
+    // Inicializa os sliders quando a página carregar
+    document.addEventListener('DOMContentLoaded', initEventSliders);
 });
