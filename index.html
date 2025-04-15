@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>República Ibriza</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-top">
+            <div class="container">
+                <div class="social-header">
+                    <a href="https://www.instagram.com/republicaibriza/" title="Siga-nos no Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/republicaibriza" title="Curta nossa página no Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@republica.ibriza" title="Siga-nos no TikTok" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+                </div>
+                <div class="header-lema">
+                    <div class="lema">Original e Independente</div>
+                    <div class="desde">Desde 2012</div>
+                </div>
+                <div class="contact-header">
+                    <a href="mailto:republicaibriza77@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                        republicaibriza77@gmail.com
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="container">
+                <div class="logo">
+                    <img src="./img/logorep.png" alt="Logo República Ibriza">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="festas.html">Festas</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+                <div class="menu-hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-slider">
+                <button class="slider-arrow prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider-container">
+                    <div class="slider-track">
+                        <div class="slide">
+                            <img src="images/slider/fachada.jpg" alt="Fachada República Ibriza">
+                        </div>
+                        <div class="slide">
+                            <img src="images/slider/piscina.jpg" alt="Área da Piscina">
+                        </div>
+                        <div class="slide">
+                            <img src="images/slider/churrasqueira.jpg" alt="Área da Churrasqueira">
+                        </div>
+                        <div class="slide">
+                            <img src="images/slider/sala-tv.jpg" alt="Sala de TV">
+                        </div>
+                        <div class="slide">
+                            <img src="images/slider/sala-estudos.jpg" alt="Sala de Estudos">
+                        </div>
+                        <div class="slide">
+                            <img src="images/slider/cafofo.jpg" alt="Cafofo">
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-arrow next"><i class="fas fa-chevron-right"></i></button>
+                <div class="slider-dots"></div>
+            </div>
+        </section>
+
+        <section class="sobre-casa">
+            <div class="section-content">
+                <h2 class="section-title">Sobre a Casa</h2>
+                
+                <div class="casa-tabs">
+                    <button class="tab-btn active" data-tab="fachada">Fachada da Casa</button>
+                    <button class="tab-btn" data-tab="interna">Área Interna</button>
+                    <button class="tab-btn" data-tab="externa">Área Externa</button>
+                </div>
+                
+                <div class="tab-content active" id="fachada">
+                    <div class="fachada-slider">
+                        <button class="carousel-arrow prev">
+                            <i class="fas fa-chevron-circle-left"></i>
+                        </button>
+                        <div class="fachada-grid">
+                            <div class="fachada-card">
+                                <img src="img/casa/fachada1.jpg" alt="Fachada Principal">
+                            </div>
+                            <div class="fachada-card">
+                                <img src="img/casa/fachada2.jpg" alt="Fachada Lateral">
+                            </div>
+                            <div class="fachada-card">
+                                <img src="img/casa/fachada3.jpg" alt="Fachada Noturna">
+                            </div>
+                        </div>
+                        <button class="carousel-arrow next">
+                            <i class="fas fa-chevron-circle-right"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="interna">
+                    <div class="areas-grid">
+                        <div class="area-card">
+                            <h3>Sala de TV</h3>
+                            <div class="area-slider">
+                                <button class="carousel-arrow prev">
+                                    <i class="fas fa-chevron-circle-left"></i>
+                                </button>
+                                <div class="area-fotos">
+                                    <img src="img/casa/interna/tv1.jpg" alt="Sala de TV">
+                                    <img src="img/casa/interna/tv2.jpg" alt="Sala de TV">
+                                </div>
+                                <button class="carousel-arrow next">
+                                    <i class="fas fa-chevron-circle-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="area-card">
+                            <h3>Sala de Estudos</h3>
+                            <div class="area-slider">
+                                <button class="carousel-arrow prev">
+                                    <i class="fas fa-chevron-circle-left"></i>
+                                </button>
+                                <div class="area-fotos">
+                                    <img src="img/casa/interna/estudos1.jpg" alt="Sala de Estudos">
+                                    <img src="img/casa/interna/estudos2.jpg" alt="Sala de Estudos">
+                                </div>
+                                <button class="carousel-arrow next">
+                                    <i class="fas fa-chevron-circle-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="area-card">
+                            <h3>Cozinha</h3>
+                            <div class="area-slider">
+                                <button class="carousel-arrow prev">
+                                    <i class="fas fa-chevron-circle-left"></i>
+                                </button>
+                                <div class="area-fotos">
+                                    <img src="img/casa/interna/cozinha1.jpg" alt="Cozinha">
+                                    <img src="img/casa/interna/cozinha2.jpg" alt="Cozinha">
+                                </div>
+                                <button class="carousel-arrow next">
+                                    <i class="fas fa-chevron-circle-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="area-card">
+                            <h3>Quartos</h3>
+                            <div class="area-slider">
+                                <button class="carousel-arrow prev">
+                                    <i class="fas fa-chevron-circle-left"></i>
+                                </button>
+                                <div class="area-fotos">
+                                    <img src="img/casa/interna/quarto1.jpg" alt="Quarto">
+                                    <img src="img/casa/interna/quarto2.jpg" alt="Quarto">
+                                </div>
+                                <button class="carousel-arrow next">
+                                    <i class="fas fa-chevron-circle-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="externa">
+                    <div class="areas-grid">
+                        <div class="area-card">
+                            <h3>Piscina</h3>
+                            <div class="area-slider">
+                                <button class="carousel-arrow prev">
+                                    <i class="fas fa-chevron-circle-left"></i>
+                                </button>
+                                <div class="area-fotos">
+                                    <img src="img/casa/externa/piscina1.jpg" alt="Piscina">
+                                    <img src="img/casa/externa/piscina2.jpg" alt="Piscina">
+                                </div>
+                                <button class="carousel-arrow next">
+                                    <i class="fas fa-chevron-circle-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="area-card">
+                            <h3>Churrasqueira</h3>
+                            <div class="area-slider">
+                                <button class="carousel-arrow prev">
+                                    <i class="fas fa-chevron-circle-left"></i>
+                                </button>
+                                <div class="area-fotos">
+                                    <img src="img/casa/externa/churrasqueira1.jpg" alt="Churrasqueira">
+                                    <img src="img/casa/externa/churrasqueira2.jpg" alt="Churrasqueira">
+                                </div>
+                                <button class="carousel-arrow next">
+                                    <i class="fas fa-chevron-circle-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="area-card">
+                            <h3>Cafofo</h3>
+                            <div class="area-slider">
+                                <button class="carousel-arrow prev">
+                                    <i class="fas fa-chevron-circle-left"></i>
+                                </button>
+                                <div class="area-fotos">
+                                    <img src="img/casa/externa/cafofo1.jpg" alt="Cafofo">
+                                    <img src="img/casa/externa/cafofo2.jpg" alt="Cafofo">
+                                </div>
+                                <button class="carousel-arrow next">
+                                    <i class="fas fa-chevron-circle-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="familia">
+            <div class="section-content">
+                <h2 class="section-title">Nossa Família</h2>
+                <div class="familia-tabs">
+                    <button class="tab-btn active" data-tab="atuais">Atuais Moradores</button>
+                    <button class="tab-btn" data-tab="ex">Ex-Moradores</button>
+                </div>
+                
+                <div class="tab-content active" id="atuais">
+                    <button class="carousel-arrow prev">
+                        <i class="fas fa-chevron-circle-left"></i>
+                    </button>
+                    <div class="moradores-grid">
+                        <!-- 020 -->
+                        <div class="morador-card">
+                            <div class="morador-img">
+                                <img src="img/moradores/cc.jpg" alt="CC">
+                            </div>
+                            <div class="morador-info">
+                                <h3>CC</h3>
+                                <p class="curso">Administração - 020</p>
+                            </div>
+                        </div>
+
+                        <!-- 021 -->
+                        <div class="morador-card">
+                            <div class="morador-img">
+                                <img src="img/moradores/alibaba.jpg" alt="Alibabá">
+                            </div>
+                            <div class="morador-info">
+                                <h3>Alibabá</h3>
+                                <p class="curso">Economia - 021</p>
+                            </div>
+                        </div>
+
+                        <div class="morador-card">
+                            <div class="morador-img">
+                                <img src="img/moradores/gambito.jpg" alt="Gambito">
+                            </div>
+                            <div class="morador-info">
+                                <h3>Gambito</h3>
+                                <p class="curso">Economia - 021</p>
+                            </div>
+                        </div>
+
+                        <div class="morador-card">
+                            <div class="morador-img">
+                                <img src="img/moradores/judeu.jpg" alt="Judeu">
+                            </div>
+                            <div class="morador-info">
+                                <h3>Judeu</h3>
+                                <p class="curso">Engenharia de Produção - 021</p>
+                            </div>
+                        </div>
+
+                        <!-- 022 -->
+                        <div class="morador-card">
+                            <div class="morador-img">
+                                <img src="img/moradores/gigolo.jpg" alt="Gigolô">
+                            </div>
+                            <div class="morador-info">
+                                <h3>Gigolô</h3>
+                                <p class="curso">Engenharia de Produção - 022</p>
+                            </div>
+                        </div>
+
+                        <div class="morador-card">
+                            <div class="morador-img">
+                                <img src="img/moradores/motobixo.jpg" alt="Motobixo">
+                            </div>
+                            <div class="morador-info">
+                                <h3>Motobixo</h3>
+                                <p class="curso">Engenharia Florestal - 022</p>
+                            </div>
+                        </div>
+
+                        <!-- 023 -->
+                        <div class="morador-card">
+                            <div class="morador-img">
+                                <img src="img/moradores/coma.jpg" alt="Coma">
+                            </div>
+                            <div class="morador-info">
+                                <h3>Coma</h3>
+                                <p class="curso">Economia - 023</p>
+                            </div>
+                        </div>
+
+                        <div class="morador-card">
+                            <div class="morador-img">
+                                <img src="img/moradores/fidu.jpg" alt="Fidu">
+                            </div>
+                            <div class="morador-info">
+                                <h3>Fidu</h3>
+                                <p class="curso">Ciência da Computação - 023</p>
+                            </div>
+                        </div>
+
+                        <!-- 024 -->
+                        <div class="morador-card">
+                            <div class="morador-img">
+                                <img src="img/moradores/cesaria.jpg" alt="Cesária">
+                            </div>
+                            <div class="morador-info">
+                                <h3>Cesária</h3>
+                                <p class="curso">Engenharia de Produção - 024</p>
+                            </div>
+                        </div>
+
+                        <div class="morador-card">
+                            <div class="morador-img">
+                                <img src="img/moradores/cortex.jpg" alt="Córtex">
+                            </div>
+                            <div class="morador-info">
+                                <h3>Córtex</h3>
+                                <p class="curso">Ciência da Computação - 024</p>
+                            </div>
+                        </div>
+
+                        <div class="morador-card">
+                            <div class="morador-img">
+                                <img src="img/moradores/forro.jpg" alt="Forró">
+                            </div>
+                            <div class="morador-info">
+                                <h3>Forró</h3>
+                                <p class="curso">Administração - 024</p>
+                            </div>
+                        </div>
+
+                        <div class="morador-card">
+                            <div class="morador-img">
+                                <img src="img/moradores/tagarela.jpg" alt="Tagarela">
+                            </div>
+                            <div class="morador-info">
+                                <h3>Tagarela</h3>
+                                <p class="curso">Administração - 024</p>
+                            </div>
+                        </div>
+
+                        <div class="morador-card">
+                            <div class="morador-img">
+                                <img src="img/moradores/vector.jpg" alt="Véctor">
+                            </div>
+                            <div class="morador-info">
+                                <h3>Véctor</h3>
+                                <p class="curso">Biologia - 024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-arrow next">
+                        <i class="fas fa-chevron-circle-right"></i>
+                    </button>
+                </div>
+                
+                <div class="tab-content" id="ex">
+                    <button class="carousel-arrow prev">
+                        <i class="fas fa-chevron-circle-left"></i>
+                    </button>
+                    <div class="moradores-grid">
+                        <!-- Cards para ex-moradores -->
+                        <div class="morador-card">
+                            <div class="morador-img">
+                                <img src="img/ex-moradores/ex1.jpg" alt="Nome do Ex-Morador">
+                            </div>
+                            <div class="morador-info">
+                                <h3>Nome do Ex-Morador</h3>
+                                <p>Apelido</p>
+                                <p class="periodo">2012-2016</p>
+                            </div>
+                        </div>
+                        <!-- Mais cards de ex-moradores -->
+                    </div>
+                    <button class="carousel-arrow next">
+                        <i class="fas fa-chevron-circle-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-widgets">
+            <div class="container">
+                <div class="widget sobre-widget">
+                    <h3>Sobre a Ibriza</h3>
+                    <p>A República Ibriza é uma das mais tradicionais repúblicas universitárias de Sorocaba-SP, conhecida por suas festas memoráveis e forte tradição estudantil.</p>
+                </div>
+                
+                <div class="contato-social-group">
+                    <div class="widget contato-widget">
+                        <h3>Contato</h3>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i> R. Grécia, 222 - Jardim Europa, Sorocaba - SP, 18045-350</li>
+                            <li><i class="fas fa-envelope"></i> republicaibriza77@gmail.com</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="widget social-widget">
+                        <h3>Redes Sociais</h3>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/republicaibriza/" title="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/republicaibriza" title="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.tiktok.com/@republica.ibriza" title="TikTok" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="widget mapa-widget">
+                    <h3>Localização</h3>
+                    <div class="mapa">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.0123456789!2d-47.123456!3d-23.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c58abcdef12345%3A0x1234567890abcdef!2sR.+Gr%C3%A9cia%2C+222+-+Jardim+Europa%2C+Sorocaba+-+SP%2C+18045-350!5e0!3m2!1spt-BR!2sbr!4v1234567890!5m2!1spt-BR!2sbr" 
+                            width="100%" 
+                            height="200" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 República Ibriza. Todos os direitos reservados.</p>
+                <div class="footer-nav">
+                    <a href="privacidade.html">Política de Privacidade</a>
+                    <a href="termos.html">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-logo">
+        <img src="./img/logorep.png" alt="Logo República Ibriza">
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
